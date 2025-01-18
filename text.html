@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Players</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #37003c;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .club-logos {
+            background-color: #4b0082;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 0;
+        }
+
+        .club-logos img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(90deg, #0099ff, #6c00ff);
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+        }
+
+        .search-bar {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .search-bar button {
+            background-color: white;
+            color: #37003c;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .filters select, .filters button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .filters button {
+            background-color: #37003c;
+            color: white;
+        }
+
+        .player-table {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        .player-table th, .player-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .player-table th {
+            background-color: #f4f4f4;
+            color: #37003c;
+        }
+
+        .player-table img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="https://via.placeholder.com/50" alt="Premier League Logo">
+                <span>Premier League</span>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Fixtures</a>
+                <a href="#">Results</a>
+                <a href="#">Tables</a>
+                <a href="#">Transfers</a>
+                <a href="#">News</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="club-logos">
+        <img src="https://via.placeholder.com/40" alt="Club Logo 1">
+        <img src="https://via.placeholder.com/40" alt="Club Logo 2">
+        <img src="https://via.placeholder.com/40" alt="Club Logo 3">
+        <img src="https://via.placeholder.com/40" alt="Club Logo 4">
+        <img src="https://via.placeholder.com/40" alt="Club Logo 5">
+    </div>
+
+    <div class="hero">
+        <h1>Players</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a Player">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="filters">
+        <div>
+            <label for="season">Filter by Season:</label>
+            <select id="season">
+                <option>2024/25</option>
+                <option>2023/24</option>
+            </select>
+        </div>
+        <div>
+            <label for="club">Filter by Club:</label>
+            <select id="club">
+                <option>All Clubs</option>
+                <option>Club 1</option>
+                <option>Club 2</option>
+            </select>
+        </div>
+        <button>Reset Filters</button>
+    </div>
+
+    <table class="player-table">
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>Position</th>
+                <th>Nationality</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://via.placeholder.com/40" alt="Player"> Max Aarons</td>
+                <td>Defender</td>
+                <td>England</td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/40" alt="Player"> Zach Abbott</td>
+                <td>Defender</td>
+                <td>England</td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/40" alt="Player"> Adam Armstrong</td>
+                <td>Forward</td>
+                <td>England</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
