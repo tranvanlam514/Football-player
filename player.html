@@ -42,8 +42,8 @@
             <div>Football & Community</div>
             <div>About</div>
             <div>More</div>
-            <a class="tag-header" href="./team.html">Teams</a>
-            <a class="tag-header" href="./player.html">Players</a>
+            <a class="tag-header" href="">Teams</a>
+            <a class="tag-header" href="">Players</a>
         </div>
         <div class="right">
             <div>More than a game</div>
@@ -55,9 +55,60 @@
             </a>
         </div>
     </div>
-
-    <h1 style="margin: 600px auto;">INDEX</h1>
-
+    <div class="header-container">
+        <div class="title">Players</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a Player">
+        </div>
+    </div>
+    <div class="filters-container">
+        <div class="filters">
+            <select>
+                <option>Filter by Season</option>
+                <option>2024/25</option>
+                <option>2023/24</option>
+            </select>
+            <select>
+                <option>Filter by Club</option>
+                <option>All Clubs</option>
+                <option>Arsenal</option>
+                <option>Aston Villa</option>
+                <option>AFC Bournemouth</option>
+                <option>Brentford</option>
+                <option>Brighton & Hove Albion</option>
+                <option>Chelsea</option>
+                <option>Crystal Palace</option>
+                <option>Everton</option>
+                <option>Fulham</option>
+                <option>Ipswich Town</option>
+                <option>Leicester City</option>
+                <option>Liverpool</option>
+                <option>Manchester City</option>
+                <option>Manchester United</option>
+                <option>Newcastle United</option>
+                <option>Nottingham Forest</option>
+                <option>Southampton</option>
+                <option>Tottenham Hotspur</option>
+                <option>West Ham United</option>
+                <option>Wolverhampton Wanderers</option>
+            </select>
+        </div>
+        <div class="reset-filters"><button type="button" class="btn btn-info">🔄 RESET FILTERS</button></div>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Position</th>
+                    <th>Nationality</th>
+                </tr>
+            </thead>
+            <tbody id="ball-player">
+                <!-- Dữ liệu cầu thủ sẽ được thêm vào đây bằng JavaScript -->
+            </tbody>
+        </table>
+    </div>
     <footer>
         <!-- Đối tác -->
         <div class="partners">
