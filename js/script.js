@@ -19,6 +19,11 @@ async function fetchFootballData() {
         players.forEach(player => {
             // Tạo một hàng mới trong bảng
             const playerRow = document.createElement("tr");
+            playerRow.classList.add("player-row");
+            // Gán sự kiện click cho hàng, chuyển hướng đến trang thông tin cầu thủ
+            playerRow.addEventListener("click", () => {
+                window.location.href = `./infor.html?id=${player.id}`;
+            });
             playerRow.innerHTML = `
                 <td>${player.first_name} ${player.last_name}</td>
                 <td>${player.position || "N/A"}</td>

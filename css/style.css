@@ -363,3 +363,7 @@ footer {
     text-decoration: none;
     color: #fff;
 }
+
+.player-row {
+    cursor: pointer;
+}
