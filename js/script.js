@@ -1,4 +1,4 @@
-const API_URL = "https://api.balldontlie.io/v1/players?per_page=10";
+const API_URL = "https://api.balldontlie.io/v1/players?per_page=30";
 const API_KEY = "9145376e-18b8-4f11-aa88-e87fb116ea88";
 
 const API_TEAM_URL = "https://api.balldontlie.io/epl/v1/teams?season=2024";
