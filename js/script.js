@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Gọi hàm lấy dữ liệu đội bóng
-// fetchFootballTeamData();
+fetchFootballTeamData();
 
 function logout() {
     let confirmLogout = confirm("Are you sure you want to log out?");
