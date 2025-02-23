@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.header {
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    width: 45%;
+    text-align: left;
+}
+
+.right-section {
+    width: 45%;
+    background: #eee;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin-form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.signin-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.signin-form input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.password-field {
+    display: flex;
+    align-items: center;
+}
+
+.password-field button {
+    background: #ccc;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.signin-btn {
+    background: #1f1c18;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-account-btn {
+    background: #d3003f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.header {
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    width: 45%;
+    text-align: left;
+}
+
+.right-section {
+    width: 45%;
+    background: #eee;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.signup-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.signup-form input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.password-field {
+    display: flex;
+    align-items: center;
+}
+
+.password-field button {
+    background: #ccc;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.signup-btn {
+    background: #1f1c18;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin-redirect-btn {
+    background: #d3003f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
