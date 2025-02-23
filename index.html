@@ -114,6 +114,61 @@
         th {
             background-color: #f2f2f2;
         }
+        footer {
+            background-color: #2d013e;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .partners {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .partners div {
+            text-align: center;
+        }
+
+        .partners img {
+            height: 40px;
+            display: block;
+            margin: 0 auto 5px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .footer-content h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .footer-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-content ul li {
+            margin: 5px 0;
+        }
+
+        .footer-content ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-content ul li a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -150,7 +205,12 @@
         </div>
         <div class="right">
             <div>More than a game</div>
-            <button type="button" class="btn btn-light">Sign in</button>
+            <a href="./signin.html"></a>
+                <button type="button" class="btn btn-light" id="signin-btn">Sign in</button>
+            </a>
+            <a href="./signup.html"></a>
+                <button type="button" class="btn btn-light" id="signup-btn">Sign up</button>
+            </a>
         </div>
     </div>
     <div class="header-container">
@@ -195,32 +255,88 @@
     </div>
     <div class="table-container">
         <table>
-            <tr>
-                <th>Player</th>
-                <th>Position</th>
-                <th>Nationality</th>
-            </tr>
-            <tr>
-                <td>Max Aarons</td>
-                <td>Defender</td>
-                <td>England</td>
-            </tr>
-            <tr>
-                <td>Zach Abbott</td>
-                <td>Defender</td>
-                <td>England</td>
-            </tr>
-            <tr>
-                <td>Josh Acheampong</td>
-                <td>Defender</td>
-                <td>England</td>
-            </tr>
-            <tr>
-                <td>Adam Armstrong</td>
-                <td>Forward</td>
-                <td>England</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Position</th>
+                    <th>Nationality</th>
+                </tr>
+            </thead>
+            <tbody id="ball-player">
+                <!-- Dữ liệu cầu thủ sẽ được thêm vào đây bằng JavaScript -->
+            </tbody>
         </table>
     </div>
+    <footer>
+        <!-- Đối tác -->
+        <div class="partners">
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2023/04/06/c9fc1dca-fe99-40ab-ab41-be1979ee852d/ea_sports_black_435_x_290_360.png?width=435&height=290" alt="EA Sports"><span>Lead Partner</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2023/01/26/11fe030b-2b2e-41ed-8f34-be72a8403ea0/Barclays_Sponsor.png?width=230&height=80" alt="Barclays"><span>Official Bank</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2024/06/12/d5dcc7f8-fbaf-4f12-883b-04620b08506f/Guinness_Partner.jpg?width=435&height=290" alt="Guinness"><span>Official Beer</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2023/01/26/737c3235-de74-4d72-a2fc-496365258f4b/Hublot_Sponsor.png?width=300&height=150" alt="Hublot"><span>Official Timekeeper</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2023/01/26/8016f9bd-4ca7-4a1a-8336-bf9eac81e265/Nike_Sponsor.png?width=222&height=78" alt="Nike"><span>Official Ball</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2023/01/26/c3238a2c-d4af-48a2-9345-0b7a82c18cd8/Oracle_Sponsor.png?width=300&height=150" alt="Oracle"><span>Official Cloud Partner</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2023/01/26/29bca766-5224-4166-b20b-3aac01e67fb9/AD_Sponsor.png?width=280&height=90" alt="Avery Dennison"><span>Official Licencee</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2023/01/26/e7f37045-a73d-4b09-bfab-93a20044b31a/Panini_Sponsor.png?width=300&height=73" alt="Panini"><span>Official Licencee</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2024/10/28/cf59f725-738f-4a56-b9cf-5e730101f9d1/SorareSponsor_New.png?width=230&height=80" alt="Sorare"><span>Official Licencee</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2024/06/01/f620e214-5330-4021-b382-183e6b564a64/Rezzil_Logo.png?width=230&height=80" alt="Rezzil"><span>Official Licencee</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2024/06/10/6547dca8-babf-49e5-95d5-ec4bb1744248/FootballManager_Logo.png?width=230&height=80" alt="Football Manager"><span>Official Licencee</span></div>
+        </div>
+    
+        <!-- Nội dung Footer -->
+        <div class="footer-content">
+            <div>
+                <h3>Premier League</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Fixtures</a></li>
+                    <li><a href="#">Results</a></li>
+                    <li><a href="#">Tables</a></li>
+                    <li><a href="#">Stats</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>Fantasy</h3>
+                <ul>
+                    <li><a href="#">FPL Home</a></li>
+                    <li><a href="#">My Team</a></li>
+                    <li><a href="#">FPL Transfers</a></li>
+                    <li><a href="#">Leagues</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>Football & Community</h3>
+                <ul>
+                    <li><a href="#">Wider Football</a></li>
+                    <li><a href="#">PL Charitable Fund</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Youth Development</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">What we do</a></li>
+                    <li><a href="#">Governance</a></li>
+                    <li><a href="#">Inclusion</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="#">PL on YouTube</a></li>
+                    <li><a href="#">PL on TikTok</a></li>
+                    <li><a href="#">PL on Facebook</a></li>
+                    <li><a href="#">PL on X</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>    
 </body>
 </html>
