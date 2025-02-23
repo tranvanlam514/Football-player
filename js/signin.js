@@ -13,6 +13,11 @@ document.querySelector(".signin-form").addEventListener("submit", function(event
     let storedUser = JSON.parse(localStorage.getItem("user"));
     if (storedUser && storedUser.email === email && storedUser.password === password) {
         alert("Login Successful!");
+        let currentUser = {
+            email: email,
+            password: password
+        };
+        localStorage.setItem("currentUser", JSON.stringify(currentUser));
         window.location.href = "index.html"; // Chuyển sang trang chủ
     } else {
         alert("Invalid email or password. Please try again.");
