@@ -69,3 +69,37 @@ window.addEventListener("click", function (event) {
 
 // Gọi hàm lấy dữ liệu
 fetchFootballData();
+document.getElementById("search-button").addEventListener("click", function () {
+    let playerName = document.getElementById("search-input").value.trim();
+    
+    if (playerName === "") {
+        alert("Please enter a player name!");
+        return;
+    }
+
+    fetch(`${API_URL}?search=${playerName}`, {
+        headers: { "Authorization": `Bearer ${API_KEY}` }
+    })
+    .then(response => response.json())
+    .then(data => {
+        let resultsDiv = document.getElementById("player-results");
+        resultsDiv.innerHTML = ""; // Xóa kết quả cũ
+
+        if (data.data.length === 0) {
+            resultsDiv.innerHTML = "<p>No players found.</p>";
+            return;
+        }
+
+        data.data.forEach(player => {
+            let playerInfo = `
+                <div class="player-card">
+                    <h3>${player.first_name} ${player.last_name}</h3>
+                    <p>Position: ${player.position || "Unknown"}</p>
+                    <p>Team: ${player.team ? player.team.full_name : "Free Agent"}</p>
+                </div>
+            `;
+            resultsDiv.innerHTML += playerInfo;
+        });
+    })
+    .catch(error => console.error("Error fetching player data:", error));
+});

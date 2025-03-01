@@ -4,24 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Football Player Search</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .about-section {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .about-section h2 {
+            color: #003366;
+            text-align: center;
+        }
+        .about-section h3 {
+            color: #0055aa;
+            margin-top: 20px;
+        }
+        .about-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .about-section a {
+            color: #0055aa;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        .about-section a:hover {
+            color: #ff6600;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <h1>About Us</h1>
+    <div class="club-logos">
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" alt="Boston Celtics">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Brooklyn_Nets_newlogo.svg" alt="Brooklyn Nets">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/25/New_York_Knicks_logo.svg" alt="New York Knicks">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" alt="Philadelphia 76ers">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/36/Toronto_Raptors_logo.svg" alt="Toronto Raptors">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Chicago_Bulls_logo.svg" alt="Chicago Bulls">
+        <img src="https://sportzforless.com/cdn/shop/products/cleveland-cavaliers.jpg?v=1575428340" alt="Cleveland Cavaliers">
+        <img src="https://vectorified.com/image/detroit-pistons-logo-vector-16.png" alt="Detroit Pistons">
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Indiana_Pacers.svg" alt="Indiana Pacers">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Milwaukee_Bucks_logo.svg" alt="Milwaukee Bucks">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" alt="Atlanta Hawks">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c4/Charlotte_Hornets_%282014%29.svg" alt="Charlotte Hornets">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" alt="Miami Heat">
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/10/Orlando_Magic_logo.svg" alt="Orlando Magic">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Washington_Wizards_logo.svg" alt="Washington Wizards">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/76/Denver_Nuggets.svg" alt="Denver Nuggets">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Minnesota_Timberwolves_logo.svg" alt="Minnesota Timberwolves">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/5d/Oklahoma_City_Thunder.svg" alt="Oklahoma City Thunder:">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Portland_Trail_Blazers_logo.svg" alt="Portland Trail Blazers">
+        <img src="https://logosmarcas.net/wp-content/uploads/2020/07/Utah-Jazz-Logotipo-1997-2004.jpg" alt="Utah Jazz">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/01/Golden_State_Warriors_logo.svg" alt="Golden State Warriors">
+        <img src="https://www.pngall.com/wp-content/uploads/15/Los-Angeles-Clippers-Logo-PNG-Images.png" alt="Los Angeles Clippers">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg" alt="Los Angeles Lakers">
+    </div>
+    <div class="navbar">
+        <div class="left">
+            <div class="logo">
+                <img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" alt="NBA" style="height: 40px; width:30px;" onclick="document.location='./index.html'">
+            </div>
+            <a class="tag-header" href="index.html">Home</a>
+            <a class="tag-header" href="about.html">About</a>
+            <a class="tag-header" href="./player.html">Players</a>
         </div>
-    </header>
-    
+        <div class="right">
+            <div>More than a game</div>
+            <a href="./signin.html">
+                <button type="button" class="btn btn-light" id="signin-btn">Sign in</button>
+            </a>
+            <a href="./signup.html">
+                <button type="button" class="btn btn-light" id="signup-btn">Sign up</button>
+            </a>
+        </div>
+    </div>
     <section class="about-section">
-        <h2>Welcome to Football Player Search</h2>
-        <p>Football Player Search is a web application that allows users to search for football players and retrieve their details, such as name, position, nationality, and more.</p>
-        <p>We use the Football Data API to provide accurate and up-to-date information about players from various leagues around the world.</p>
+        <h2>Welcome to Basketball Player Search</h2>
+        <p>Search player is a web application that allows users to search for basketball players and retrieve their details, such as name, position, nationality, and more.</p>
+        <p>We use the balldontlie API to provide accurate and up-to-date information about players from various leagues around the world.</p>
         <h3>Our Mission</h3>
-        <p>Our mission is to make football player data easily accessible to fans, analysts, and sports enthusiasts. Whether you want to check player stats or explore new talents, our platform provides a simple and efficient way to find football information.</p>
-        <h3>Contact Us</h3>
-        <p>If you have any questions or suggestions, feel free to contact us at <a href="mailto:support@footballplayersearch.com">support@footballplayersearch.com</a>.</p>
+        <p>Our mission is to make basketball player data easily accessible to fans, analysts, and sports enthusiasts. Whether you want to check player stats or explore new talents, our platform provides a simple and efficient way to find basketball information.</p>
     </section>
+    <footer>
+        <!-- Đối tác -->
+        <div class="partners">
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2023/04/06/c9fc1dca-fe99-40ab-ab41-be1979ee852d/ea_sports_black_435_x_290_360.png?width=435&height=290" alt="EA Sports"><span>Lead Partner</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2023/01/26/11fe030b-2b2e-41ed-8f34-be72a8403ea0/Barclays_Sponsor.png?width=230&height=80" alt="Barclays"><span>Official Bank</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2024/06/12/d5dcc7f8-fbaf-4f12-883b-04620b08506f/Guinness_Partner.jpg?width=435&height=290" alt="Guinness"><span>Official Beer</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2023/01/26/737c3235-de74-4d72-a2fc-496365258f4b/Hublot_Sponsor.png?width=300&height=150" alt="Hublot"><span>Official Timekeeper</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2023/01/26/8016f9bd-4ca7-4a1a-8336-bf9eac81e265/Nike_Sponsor.png?width=222&height=78" alt="Nike"><span>Official Ball</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2023/01/26/c3238a2c-d4af-48a2-9345-0b7a82c18cd8/Oracle_Sponsor.png?width=300&height=150" alt="Oracle"><span>Official Cloud Partner</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2023/01/26/29bca766-5224-4166-b20b-3aac01e67fb9/AD_Sponsor.png?width=280&height=90" alt="Avery Dennison"><span>Official Licencee</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2023/01/26/e7f37045-a73d-4b09-bfab-93a20044b31a/Panini_Sponsor.png?width=300&height=73" alt="Panini"><span>Official Licencee</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2024/10/28/cf59f725-738f-4a56-b9cf-5e730101f9d1/SorareSponsor_New.png?width=230&height=80" alt="Sorare"><span>Official Licencee</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2024/06/01/f620e214-5330-4021-b382-183e6b564a64/Rezzil_Logo.png?width=230&height=80" alt="Rezzil"><span>Official Licencee</span></div>
+            <div><img src="https://resources.premierleague.pulselive.com/photo-resources/2024/06/10/6547dca8-babf-49e5-95d5-ec4bb1744248/FootballManager_Logo.png?width=230&height=80" alt="Football Manager"><span>Official Licencee</span></div>
+        </div>
+    
+        <!-- Nội dung Footer -->
+        <div class="footer-content">
+            <div>
+                <h3>Premier League</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Fixtures</a></li>
+                    <li><a href="#">Results</a></li>
+                    <li><a href="#">Tables</a></li>
+                    <li><a href="#">Stats</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>Fantasy</h3>
+                <ul>
+                    <li><a href="#">FPL Home</a></li>
+                    <li><a href="#">My Team</a></li>
+                    <li><a href="#">FPL Transfers</a></li>
+                    <li><a href="#">Leagues</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>Football & Community</h3>
+                <ul>
+                    <li><a href="#">Wider Football</a></li>
+                    <li><a href="#">PL Charitable Fund</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Youth Development</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">What we do</a></li>
+                    <li><a href="#">Governance</a></li>
+                    <li><a href="#">Inclusion</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="#">PL on YouTube</a></li>
+                    <li><a href="#">PL on TikTok</a></li>
+                    <li><a href="#">PL on Facebook</a></li>
+                    <li><a href="#">PL on X</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
